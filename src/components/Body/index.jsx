@@ -5,9 +5,9 @@ export function Body() {
 			<main>
 				<h2>Melhores Ofertas</h2>
 				<ul>
-					<li>Camiseta Branca</li>
-					<li>Camiseta Azul</li>
-					<li>Camiseta Verde</li>
+					<li>Tênis Masculino</li>
+					<li>Tênis Feminino</li>
+					<li>Tênis Infantil</li>
 				</ul>
 			</main>
 		</div>
