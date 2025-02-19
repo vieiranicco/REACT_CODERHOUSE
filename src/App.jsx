@@ -1,12 +1,14 @@
 import { Body } from "./components/Body"
-import { NavBar } from "./components/NavBar/NavBar"
+import { NavBar } from "./components/NavBar"
+import { ItemListContainer } from "./components/ItemListContainer";
 
-export function App() {
+export const App = () => {
 	return (
 		<>
 			<NavBar />
+			<ItemListContainer greeting="Bem-Vindo à nossa loja!" />
 			<Body />
 		</>
 	)
 }
-export default App
+
