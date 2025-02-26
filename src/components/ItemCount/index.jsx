@@ -1,34 +1,58 @@
-import React from 'react'; // eslint-disable-line no-unused-vars
-import { useState } from 'react';
-import './style.css';
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from 'react';
+import { FaShoppingCart } from 'react-icons/fa';
 
-const ItemCount = ({ stock, initial = 1, onAdd }) => {
-    const [quantity, setQuantity] = useState(initial);
 
-    const handleIncrement = () => {
-        if (quantity < stock) {
-            setQuantity(quantity + 1);
-        }
-    };
-
-    const handleDecrement = () => {
-        if (quantity > 1) {
-            setQuantity(quantity - 1);
-        }
-    };
-
+const CartWidget = ({ itemCount }) => {
     return (
-        <div className="item-count">
-            <div className="quantity-controls">
-                <button onClick={handleDecrement} disabled={quantity === 1}>-</button>
-                <span>{quantity}</span>
-                <button onClick={handleIncrement} disabled={quantity === stock}>+</button>
-            </div>
-            <button className="add-to-cart" onClick={() => onAdd(quantity)} disabled={stock === 0}>
-                Adicionar ao carrinho
-            </button>
+        <div style={{ fontSize: "1.5rem", color: "white", marginLeft: "15px", position: 'relative' }}>
+            <FaShoppingCart />
+            {itemCount > 0 && (
+                <span
+                    style={{
+                        position: 'absolute',
+                        top: '-10px',
+                        right: '-10px',
+                        backgroundColor: 'red',
+                        color: 'white',
+                        borderRadius: '50%',
+                        padding: '2px 6px',
+                        fontSize: '0.8rem',
+                    }}
+                >
+                    {itemCount}
+                </span>
+            )}
         </div>
     );
 };
 
-export default ItemCount;
+
+const Cart = () => {
+    const [itemCount, setItemCount] = useState(0);
+
+    const handleAddItem = () => {
+        setItemCount(itemCount + 1);
+    };
+
+    const handleRemoveItem = () => {
+        if (itemCount > 0) {
+            setItemCount(itemCount - 1);
+        }
+    };
+
+    return (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <button onClick={handleRemoveItem} disabled={itemCount === 0}>
+                Remover
+            </button>
+            <span>Itens no carrinho: {itemCount}</span>
+            <button onClick={handleAddItem}>
+                Adicionar
+            </button>
+            <CartWidget itemCount={itemCount} />
+        </div>
+    );
+};
+
+export default Cart;
