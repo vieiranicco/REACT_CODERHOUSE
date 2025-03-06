@@ -16,7 +16,7 @@ const products = [
 		price: 299.99,
 		pictureUrl:
 			"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/394296/10/sv01/fnd/BRA/w/1000/h/1000/fmt/png",
-		category: "Masculino"
+		category: "Feminino"
 	},
 	{
 		id: 3,
