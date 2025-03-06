@@ -1,0 +1,71 @@
+/* CategoryList.css */
+.category-list {
+	display: flex;
+	flex-wrap: wrap; /* Permite que as caixas quebrem para a próxima linha */
+	justify-content: center; /* Centraliza as caixas */
+	gap: 20px; /* Espaçamento entre as caixas */
+	margin-top: 40px;
+	padding: 20px;
+	background-color: #f8f9fa;
+}
+
+.category-item {
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+	width: 300px; /* Aumentei a largura das caixas */
+	padding: 20px;
+	border-radius: 15px;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-item img {
+	width: 100%;
+	height: 250px; /* Aumentei a altura das imagens */
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.category-name {
+	margin-top: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #333;
+}
+
+/* Efeito hover */
+.category-item:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* CategoryList.css */
+.category-list {
+	display: flex;
+	flex-direction: column;
+	gap: 40px; /* Espaçamento entre as categorias */
+	margin-top: 40px;
+	padding: 20px;
+	background-color: #f8f9fa;
+}
+
+.category-section {
+	text-align: center;
+}
+
+.category-section h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.category-items {
+	display: flex;
+	justify-content: center;
+	gap: 20px; /* Espaçamento entre os itens */
+	flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+}

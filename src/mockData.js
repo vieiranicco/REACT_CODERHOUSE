@@ -6,7 +6,8 @@ const products = [
 		description: "Tênis confortável para o dia a dia.",
 		price: 239.99,
 		pictureUrl:
-			"https://static.netshoes.com.br/produtos/tenis-puma-rbd-game-low-bdp-unissex/20/2I3-5480-120/2I3-5480-120_zoom1.jpg?ts=1723210726&ims=1088x"
+			"https://static.netshoes.com.br/produtos/tenis-puma-rbd-game-low-bdp-unissex/20/2I3-5480-120/2I3-5480-120_zoom1.jpg?ts=1723210726&ims=1088x",
+		category: "Masculino"
 	},
 	{
 		id: 2,
@@ -14,7 +15,8 @@ const products = [
 		description: "Tênis elegante para mulheres.",
 		price: 299.99,
 		pictureUrl:
-			"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/394296/10/sv01/fnd/BRA/w/1000/h/1000/fmt/png"
+			"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/394296/10/sv01/fnd/BRA/w/1000/h/1000/fmt/png",
+		category: "Masculino"
 	},
 	{
 		id: 3,
@@ -22,7 +24,8 @@ const products = [
 		description: "Tênis divertido para crianças.",
 		price: 189.99,
 		pictureUrl:
-			"https://magicfeet.vtexassets.com/arquivos/ids/178421-800-auto?v=637268099051300000&width=800&height=auto&aspect=true"
+			"https://magicfeet.vtexassets.com/arquivos/ids/178421-800-auto?v=637268099051300000&width=800&height=auto&aspect=true",
+		category: "Infantil"
 	},
 
 	{
@@ -31,7 +34,8 @@ const products = [
 		description: "Ícone das quadras de basquete desde seu lançamento em 1969",
 		price: 189.99,
 		pictureUrl:
-			"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0fc29731133d4002be2dab59002210e7_9366/Tenis_Slip-On_Superstar_Preto_EW2053.jpg"
+			"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0fc29731133d4002be2dab59002210e7_9366/Tenis_Slip-On_Superstar_Preto_EW2053.jpg",
+		category: "Feminino"
 	},
 
 	{
@@ -40,7 +44,8 @@ const products = [
 		description: "Versatilidade e conforto com muito DNA esportivo",
 		price: 799.99,
 		pictureUrl:
-			"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/8d1e528aac6c4bc4b530393ea1aa84cb_9366/Tenis_Forum_Low_CL_Verde_JR8305_01_00_standard.jpg"
+			"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/8d1e528aac6c4bc4b530393ea1aa84cb_9366/Tenis_Forum_Low_CL_Verde_JR8305_01_00_standard.jpg",
+		category: "Sale"
 	}
 ]
 
