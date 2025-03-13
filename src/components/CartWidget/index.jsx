@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useContext } from "react"
+import { useContext } from "react"
 import { FaShoppingCart } from "react-icons/fa"
 import { CartContext } from "../../context/CartContext" // Importe o contexto
 

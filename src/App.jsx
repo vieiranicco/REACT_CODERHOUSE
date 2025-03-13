@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react"
+import { CartProvider } from "./components/context/CartProvider"
 import { NavBar } from "./components/NavBar"
 import { ItemListContainer } from "./components/ItemListContainer"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
@@ -7,7 +8,6 @@ import { Masculino } from "./components/Pages/Masculino" // Crie essas páginas
 import { Feminino } from "./components/Pages/Feminino"
 import { Infantil } from "./components/Pages/Infantil"
 import { Sale } from "./components/Pages/Sale"
-import { CartProvider } from "./components/context/CartProvider"
 
 export const App = () => {
 	return (

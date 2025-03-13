@@ -20,8 +20,13 @@ export const CartProvider = ({ children }) => {
 		})
 	}
 
+	// Função para remover um item do carrinho
+	const removeFromCart = (itemId) => {
+		setCart((prevCart) => prevCart.filter((item) => item.id !== itemId))
+	}
+
 	return (
-		<CartContext.Provider value={{ cart, addToCart }}>
+		<CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
 			{children}
 		</CartContext.Provider>
 	)
